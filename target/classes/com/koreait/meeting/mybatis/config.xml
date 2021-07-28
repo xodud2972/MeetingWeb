@@ -4,15 +4,10 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.koreait.meeting.domain.Admin" alias="Admin"/>
-		<typeAlias type="com.koreait.meeting.domain.TopCategory" alias="TopCategory"/>
-		<typeAlias type="com.koreait.meeting.domain.TopCategoryCount" alias="TopCategoryCount"/>
-		<typeAlias type="com.koreait.meeting.domain.SubCategory" alias="SubCategory"/>
+		<typeAlias type="com.koreait.meeting.domain.Board" alias="Board"/>
 	</typeAliases>
 
 	<mappers>
-		<mapper resource="com/koreait/meeting/mybatis/AdminMapper.xml" />
-		<mapper resource="com/koreait/meeting/mybatis/TopCategoryMapper.xml" />
-		<mapper resource="com/koreait/meeting/mybatis/SubCategoryMapper.xml" />
+		<mapper resource="com/koreait/meeting/mybatis/BoardMapper.xml" />
 	</mappers>
 </configuration>
