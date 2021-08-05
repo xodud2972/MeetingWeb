@@ -49,7 +49,7 @@ public class AdminController {
 		
 		//3단계: 일 시키기 
 		Admin obj=adminService.login(admin);
-		//System.out.println("로그인 성공 후 sign_id는 "+obj.getSign_id());
+		System.out.println("로ㅓ그인 성공 후 sign_id는 "+obj.getSign_id());
 		
 		ProFile proFile = proFileService.selectByAdmin(obj.getSign_id());
 		proFile = proFileService.select(obj.getSign_id());
