@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 
- <!-- Favicons -->
+<!-- Favicons -->
   <link href="/resources/assets/img/favicon.png" rel="icon">
   <link href="/resources/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -28,13 +28,14 @@
   
   
   <!-- custom CSS File -->
-  <link href="/resources/assets/css/socustom.css" rel="stylesheet">
-
+  <link href="/resources/assets/css/custom.css" rel="stylesheet">
 
 <style>
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
+body {font-family: Arial, Helvetica, sans-serif;
+background: #f8f8f8;
 
+margin-top: 150px;}
+* {box-sizing: border-box;}
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -45,24 +46,24 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-
 input[type=button] {
-  background-color: #04AA6D;
+  background: linear-gradient(45deg, #1de099, #1dc8cd);
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
-
 input[type=button]:hover {
-  background-color: #45a049;
+  background: pink;
 }
-
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
   padding: 20px;
+}
+
+h3{
+	margin-left: 210px;
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -86,7 +87,6 @@ $(function(){
 		location.href="/board/list";	
 	});	
 });
-
 function del(){
 	$("form").attr({
 		"action":"/board/del",
@@ -94,7 +94,6 @@ function del(){
 	});	
 	$("form").submit();	
 }
-
 function edit(){
 	$("form").attr({
 		"action":"/board/edit",
@@ -102,8 +101,6 @@ function edit(){
 	});	
 	$("form").submit();
 }
-
-
 </script>
 </head>
 <body>
@@ -131,8 +128,7 @@ function edit(){
                 <li class="menu-has-children">
                   <a href="#">Gallery</a>
                   <ul>
-                    <li><a href="#">Male</a></li>
-                    <li><a href="#">Female</a></li>
+                    <li><a href="/profile/gallery">Member</a></li>
                   </ul>
                 </li>
                 <li><a href="#">Cart</a></li>
@@ -163,9 +159,10 @@ function edit(){
   <script src="/resources/assets/js/main.js"></script>
 
   <!-- Custom Js -->
-  <script src="/resources/assets/js/socustom.js"></script>
+  <script src="/resources/assets/js/custom.js"></script>
 
-<h3>상세보기</h3>
+
+<h3>게시판 상세보기</h3>
 
 <div class="container">
   <form>
@@ -180,11 +177,7 @@ function edit(){
   </form>
 </div>
 
+
+
 </body>
-</html>
-
-
-
-
-
-    
+</html

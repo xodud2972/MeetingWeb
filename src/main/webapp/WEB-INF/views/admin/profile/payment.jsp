@@ -9,22 +9,8 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="/resources/assets/img/favicon.png" rel="icon">
-  <link href="/resources/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="/resources/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/resources/assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="/resources/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="/resources/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="/resources/assets/vendor/venobox/venobox.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="/resources/assets/css/style.css" rel="stylesheet">
+<!-- header -->
+<%@ include file="../inc/toolbar.jsp" %>
   
   
   <!-- custom CSS File -->
@@ -38,7 +24,7 @@
   <div class="container">
 
     <div id="logo" class="pull-left">
-      <h1><a href="index.html" class="scrollto">Ollang Ollang</a></h1>
+      <h1><a href="/admin/main" class="scrollto">Ollang Ollang</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html"><img src="/resources/assets/img/logo.png" alt=""></a> -->
     </div>
@@ -47,23 +33,25 @@
       <ul class="nav-menu">
         <li class="menu-active"><a href="index.html">Home</a></li>
       
-        <li><a href="#team">Board</a></li>
-        <li><a href="#gallery">Chat</a></li>
-        <li class="menu-has-children"><a href="">Love Matching</a>
-          <ul>
-            <li><a href="#">My Page</a></li>
-            <li class="menu-has-children"><a href="#">Gallery</a>
+        <li><a href="/board/list">Board</a></li>
+            <li><a href="/login.do">Chat</a></li>
+            <li class="menu-has-children">
+              <a href="">Love Matching</a>
               <ul>
-                <li><a href="#">Male</a></li>
-                <li><a href="#">Female</a></li>
+                <li><a href="/profile/registform">My Page</a></li>
+                <li class="menu-has-children">
+                  <a href="#">Gallery</a>
+                  <ul>
+                    <li><a href="/profile/gallery">Member</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Cart</a></li>
               </ul>
             </li>
-            <li><a href="#">Cart</a></li>
+            <li><a href="/profile/payment">Payment</a></li>
           </ul>
-        </li>
-        <li><a href="#contact">Login</a></li>
-      </ul>
-    </nav><!-- #nav-menu-container -->
+        </nav>
+        <!-- #nav-menu-container -->
   </div>
 </header><!-- End Header -->
 
@@ -101,7 +89,7 @@
           </div>
 
           <div class="col-50">
-        
+        	<br>
         	<label for="cname" id="cc">결제방법(신용/체크)</label>
             <input type="text" id="cname" name="c_cardtype" placeholder="신용카드">        
         
@@ -113,11 +101,11 @@
             <input type="text" id="expmonth" name="c_account" placeholder="1001-9999-8888-77">
             <div class="row">
               <div class="col-50">
-                <label for="expyear">카드 명의자</label>
+                <label for="expyear" >카드 명의자</label>
                 <input type="text" id="expyear" name="c_owner" placeholder="박귀자">
               </div>
               <div class="col-50">
-                <label for="cvv">CVC,CVV,CCV</label>
+                <label for="cvv" >CVC,CVV,CCV</label>
                 <input type="text" id="cvv" name="c_ccc" placeholder="352">
               </div>
             </div>
@@ -145,21 +133,7 @@
 
 </main>
 
-  <!-- Vendor JS Files -->
-  <script src="/resources/assets/vendor/jquery/jquery.min.js"></script>
-  <script src="/resources/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="/resources/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="/resources/assets/vendor/php-email-form/validate.js"></script>
-  <script src="/resources/assets/vendor/wow/wow.min.js"></script>
-  <script src="/resources/assets/vendor/venobox/venobox.min.js"></script>
-  <script src="/resources/assets/vendor/superfish/superfish.min.js"></script>
-  <script src="/resources/assets/vendor/hoverIntent/hoverIntent.js"></script>
-  
-  <!-- Template Main JS File -->
-  <script src="/resources/assets/js/main.js"></script>
-
-  <!-- Custom Js -->
-  <script src="/resources/assets/js/custom.js"></script>
+ 
   
   <script type="text/javascript">
   
