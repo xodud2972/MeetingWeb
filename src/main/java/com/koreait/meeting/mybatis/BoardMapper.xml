@@ -19,7 +19,7 @@
 		<result column="profile_id" 			property="profile_id"/>
 		<result	column="title"					property="title"/>
 		<result	column="content"				property="content"/>
-		
+		<!-- 에러확인해보기 -->
 		<association column="profile_id"	property="proFile"	 javaType="ProFile"
 			select="ProFile.select"/>	
 	</resultMap>
