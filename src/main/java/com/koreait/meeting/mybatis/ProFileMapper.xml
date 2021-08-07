@@ -41,7 +41,8 @@
 		<result column="filename"			property="filename"/>
 		
 		<association column="sign_id"	property="admin" javaType="Admin"
-			select="Admin.select"/>	
+			select="Admin.select"/>
+					<!-- 에러확인해보기 -->	
 	</resultMap>
  
 	
