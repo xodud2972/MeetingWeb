@@ -38,7 +38,7 @@
 		<result column="c_pull"					property="c_pull"/>
 		<result column="c_bank"				property="c_bank"/>
 		<result column="c_account"			property="c_account"/>
-		
+				<!-- 에러확인해보기 -->
 		<association column="profile_id"		property="profile"  javaType="ProFile"
 			select="ProFile.select"/>	
 	</resultMap>
