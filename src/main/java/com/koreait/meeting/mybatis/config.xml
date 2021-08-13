@@ -12,7 +12,7 @@
 
 	</typeAliases>
 
-	<mappers>
+	<mappers> 
 
 		<mapper resource="com/koreait/meeting/mybatis/AdminMapper.xml"/>
 		<mapper resource="com/koreait/meeting/mybatis/ProFileMapper.xml"/>
