@@ -49,7 +49,6 @@ public class BoardController {
 		
 		HttpSession session = request.getSession();
 		ProFile proFile = (ProFile)session.getAttribute("proFile");
-		//System.out.println("게시판 form  이동시  Profile_id "+proFile.getProfile_id());		
 		model.addAttribute("ProFile", proFile);
 		
 		return "board/regist";
@@ -60,13 +59,8 @@ public class BoardController {
 	public String regist(Board board, HttpServletRequest request) {
 		
 		boardService.insert(board);
-		//HttpSession session = request.getSession();
-		//ProFile proFile = (ProFile)session.getAttribute("proFile");
-		//System.out.println("게시판 등록 직전의 Profile_id "+proFile.getProfile_id());
-		
-		//board.setProfile_id(proFile.getProfile_id());
-		
-		return "redirect:/board/list"; //게시판 목록페이지를 재요청
+		return "redirect:/board/list"; //게시판 목록페이지를 재요청 board/list 로 하지 않는 이유는 포워딩이 되버리기 때문이다.
+													//	redirect는 포워딩이아니다.
 	}
 
 	//게시판 상세보기 요청 
