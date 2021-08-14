@@ -1,0 +1,3 @@
+httpd -k start
+ip 주소 : 14.51.92.222
+king 123456
